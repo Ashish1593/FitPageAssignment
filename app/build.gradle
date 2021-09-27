@@ -75,8 +75,4 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:$retrofit"
     implementation "com.squareup.retrofit2:retrofit:$retrofit"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit"
-
-    def paging = "3.0.0"
-    implementation "androidx.paging:paging-runtime-ktx:$paging"
-    implementation "androidx.paging:paging-rxjava2-ktx:$paging"
 }

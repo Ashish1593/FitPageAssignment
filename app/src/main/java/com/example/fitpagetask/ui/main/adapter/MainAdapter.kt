@@ -48,6 +48,5 @@ class MainAdapter(private val stocks: ArrayList<Stocks>) : RecyclerView.Adapter<
             clear()
             addAll(stocks)
         }
-
     }
 }
