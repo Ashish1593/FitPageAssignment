@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                     Status.SUCCESS -> {
                         binding.recyclerView.visibility = View.VISIBLE
                         binding.progressBar.visibility = View.GONE
-                        resource.data?.let { users -> retrieveList(users) }
+                        resource.data?.let { stocks -> retrieveList(stocks) }
                     }
                     Status.ERROR -> {
                         binding.recyclerView.visibility = View.VISIBLE
@@ -67,9 +67,9 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun retrieveList(users: List<Stocks>) {
+    private fun retrieveList(stocks: List<Stocks>) {
         adapter.apply {
-            addUsers(users)
+            addStocks(stocks)
             notifyDataSetChanged()
         }
     }

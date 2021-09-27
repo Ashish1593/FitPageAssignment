@@ -10,7 +10,7 @@ import com.example.fitpagetask.data.model.Stocks
 import com.example.fitpagetask.databinding.RecyclerViewCellBinding
 import com.example.fitpagetask.ui.main.view.StocksDetailsActivity
 
-class MainAdapter(private val users: ArrayList<Stocks>) : RecyclerView.Adapter<MainAdapter.DataViewHolder>() {
+class MainAdapter(private val stocks: ArrayList<Stocks>) : RecyclerView.Adapter<MainAdapter.DataViewHolder>() {
 
     class DataViewHolder(private val itemLayout: RecyclerViewCellBinding) : RecyclerView.ViewHolder(itemLayout.root) {
 
@@ -37,16 +37,16 @@ class MainAdapter(private val users: ArrayList<Stocks>) : RecyclerView.Adapter<M
             )
         )
 
-    override fun getItemCount(): Int = users.size
+    override fun getItemCount(): Int = stocks.size
 
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
-        holder.bind(users[position])
+        holder.bind(stocks[position])
     }
 
-    fun addUsers(users: List<Stocks>) {
-        this.users.apply {
+    fun addStocks(stocks: List<Stocks>) {
+        this.stocks.apply {
             clear()
-            addAll(users)
+            addAll(stocks)
         }
 
     }
