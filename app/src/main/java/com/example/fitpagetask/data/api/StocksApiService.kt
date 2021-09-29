@@ -7,4 +7,3 @@ interface StocksApiService {
     @GET("data")
     suspend fun getStocks(): List<Stocks>
 }
-

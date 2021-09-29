@@ -8,7 +8,5 @@ data class Stocks(
     val id: Int,
     val name: String,
     val tag: String,
-    val color: String,
+    val color: String?,
     val criteria: List<Criteria>): Parcelable
-
-

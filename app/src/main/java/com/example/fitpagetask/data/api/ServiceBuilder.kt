@@ -1,18 +1,14 @@
 package com.example.fitpagetask.data.api
 
+import com.google.gson.GsonBuilder
 import retrofit2.Retrofit
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ServiceBuilder {
-    private fun getRetrofit(): Retrofit {
-        return Retrofit.Builder()
-            .baseUrl("https://mobile-app-challenge.herokuapp.com/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+    private const val BASE_URL = "https://mobile-app-challenge.herokuapp.com/"
+    fun apiService(): StocksApiService =
+        Retrofit.Builder().baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .build()
-    }
-
-    val apiService: StocksApiService = getRetrofit().create(StocksApiService::class.java)
-
+            .create(StocksApiService::class.java)
 }
