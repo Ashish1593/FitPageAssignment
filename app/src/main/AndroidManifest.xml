@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.main.view.StocksDetailsActivity" />
+        <activity android:name=".ui.main.view.SetParameterActivity" />
+        <activity android:name=".ui.main.view.ValuesActivity" />
     </application>
 
 </manifest>

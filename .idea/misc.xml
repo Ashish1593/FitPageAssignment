@@ -4,17 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.13385416666666666" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2421875" />
         <entry key="app/src/main/res/drawable/bullet_point.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/drawable/dotted_line.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/et_border.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2421875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14447463768115942" />
+        <entry key="app/src/main/res/layout/parameter_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/recycler_view_cell.xml" value="0.25" />
         <entry key="app/src/main/res/layout/stocks_detail.xml" value="0.25" />
         <entry key="app/src/main/res/layout/stocks_details.xml" value="0.1381340579710145" />
+        <entry key="app/src/main/res/layout/values_item_cell.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/values_layout.xml" value="0.16770833333333332" />
       </map>
     </option>
-  </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/fitpagetask/ui/main/MainActivity.kt" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
