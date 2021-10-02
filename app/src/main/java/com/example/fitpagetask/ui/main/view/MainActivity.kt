@@ -26,8 +26,6 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        setContentView(binding.root)
         setupViewModel()
         setupUI()
         setupFlow()
@@ -35,7 +33,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupViewModel() {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-
     }
 
     private fun setupUI() {
@@ -44,12 +41,10 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.adapter = adapter
     }
 
-
     private fun setupFlow() {
         //Since flow run asynchronously, start listening on background thread
         lifecycleScope.launch {
             viewModel.stocks.collect {
-
                 when (it.status) {
                     Status.LOADING -> {
                         binding.progressBar.visibility = View.VISIBLE
@@ -66,10 +61,7 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(this@MainActivity, "${it.message}", Toast.LENGTH_SHORT).show()
                     }
                 }
-
-
             }
-
         }
     }
 

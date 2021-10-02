@@ -13,7 +13,6 @@ import com.example.fitpagetask.ui.main.view.StocksDetailsActivity
 class MainAdapter(private val stocks: ArrayList<Stocks>) : RecyclerView.Adapter<MainAdapter.DataViewHolder>() {
 
     class DataViewHolder(private val itemLayout: RecyclerViewCellBinding) : RecyclerView.ViewHolder(itemLayout.root) {
-
         fun bind(stocks: Stocks) {
             itemView.apply {
                 itemLayout.tvName.text = stocks.name

@@ -9,7 +9,6 @@ import com.example.fitpagetask.databinding.ValuesItemCellBinding
 class ValuesAdapter(private val values: ArrayList<Double>) : RecyclerView.Adapter<ValuesAdapter.DataViewHolder>() {
 
     class DataViewHolder(private val itemLayout: ValuesItemCellBinding) : RecyclerView.ViewHolder(itemLayout.root) {
-
         fun bind(value: Double) {
             itemView.apply {
                 itemLayout.tvValue.text = value.toString()
